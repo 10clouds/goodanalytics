@@ -1,0 +1,150 @@
+body {
+  background: #fff;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.ga-button {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin: 25px 0;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(45deg, rgba(0,144,241,1) 0%,rgba(0,206,207,1) 100%);
+
+  &--plain {
+    background: transparent;
+    border: #8AE1EE solid 1px;
+  }
+}
+
+/* typography */
+
+.ga-subheading {
+  color: #50575D;
+  font-weight: 500;
+
+  &--small {
+    font-weight: 200;
+  }
+
+  &--underlined {
+    &:after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100px;
+      margin-top: 20px;
+      background: linear-gradient(45deg, rgba(0,144,241,1) 0%,rgba(0,206,207,1) 100%);
+    }
+  }
+}
+
+.ga-navbar {
+  padding: 45px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__links {
+
+  }
+}
+
+.ga-intro {
+  background: #008EE0;
+  padding: 90px 0;
+  color: #fff;
+  text-align: center;
+
+  &__inner {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* Tools section */
+
+.ga-tools-section {
+  $tools: &;
+
+  clear: both;
+
+  &--right {
+    #{$tools}__image,
+    #{$tools}__content {
+      float: right;
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+
+  &__content {
+    width: 50%;
+    float: left;
+  }
+
+  &__paragraph {
+    color: #A3AEB6;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+  }
+}
+
+/* About section */
+
+.ga-about {
+  clear: both;
+
+  &__team-member {
+    width: 20%;
+    float: left;
+    text-align: center;
+  }
+}
+
+/* Contact form */
+
+.ga-contact-form {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(0,144,241,1) 0%,rgba(0,206,207,1) 100%);
+
+  &__input {
+    display: block;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-bottom: #8FE1F0 solid 1px;
+  }
+}
+
+/* Contact info */
+
+.ga-contact-info {
+  text-align: center;
+  padding: 80px 0;
+
+
+}
+
+/* Footer */
+
+.ga-footer {
+  padding: 60px 0;
+  background: #F7F8F9;
+  text-align: center;
+}
