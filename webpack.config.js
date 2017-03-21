@@ -17,6 +17,10 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'url-loader?limit=1024&name=fonts/[name].[ext]',
+      }
     ],
   },
   plugins: [
